@@ -2,3 +2,15 @@ name: tipp
 recipe: laravel
 config:
   webroot: public
+
+services:
+  node:
+    type: node:14
+    build:
+      - npm install
+
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
