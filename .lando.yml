@@ -1,0 +1,4 @@
+name: tipp
+recipe: laravel
+config:
+  webroot: public
